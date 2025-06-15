@@ -14,7 +14,7 @@ const SignupForm = ({ onClose, onSignupSuccess }) => {
     setError(null);
 
     try {
-      const res = await fetch('blog-back-production-7906.up.railway.app/api/auth/register/register', {
+      const res = await fetch('blog-back-production-7906.up.railway.app/api/auth/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, username, email, password }),
