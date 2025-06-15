@@ -51,7 +51,7 @@ function App() {
       setLoading(true);
       setError(null);
       try {
-        const res = await fetch('http://localhost:8080/api/posts');
+        const res = await fetch('https://blog-back-production-7906.up.railway.app/api/posts');
         if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
         const data = await res.json();
         setPosts(data);
